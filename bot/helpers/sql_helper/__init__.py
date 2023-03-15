@@ -1,11 +1,19 @@
-from pymongo import MongoClient
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, scoped_session
+from bot import DATABASE_URL, LOGGER
 
-# Set up the MongoDB connection
-client = MongoClient('mongodb://mongo:TpghbMFn6sO3JyPFzrRP@containers-us-west-148.railway.app:6601')
 
-# Access a database
-db = client['Drive_']
+def start() -> scoped_session:
+  try:
+    engine = create_engine(DATABASE_URL)
+    BASE.metadata.bind = engine
+    BASE.metadata.create_all(engine)
+    return scoped_session(sessionmaker(bind=engine, autoflush=False))
+  except ValueError:
+    LOGGER.error('Invalid DATABASE_URL : Exiting now.')
+    exit(1)
 
-# Access a collection within the database
-collection = db['gDriveDB']
-collection1 = db['ParentID']
+
+BASE = declarative_base()
+SESSION = start()
