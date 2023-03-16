@@ -10,13 +10,9 @@ INSERTION_LOCK = threading.RLock()
 
 def _set(chat_id, credential_string):
     with INSERTION_LOCK:
-        saved_cred = collection.find_one({'chat_id': chat_id})
-        if not saved_cred:
-            saved_cred = {'chat_id': chat_id}
-
-        saved_cred['credential_string'] = pickle.dumps(credential_string)
-
-        collection.save(saved_cred)
+        filter_query = {'chat_id': chat_id}
+        update_query = {'$set': {'credential_string': pickle.dumps(credential_string)}}
+        collection.update_one(filter_query, update_query, upsert=True)
 
 
 def search(chat_id):
