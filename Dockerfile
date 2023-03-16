@@ -6,7 +6,7 @@ COPY . .
 
 RUN pip3 install --upgrade pip setuptools
 
-RUN pip install -U -r requirements.txt
+RUN pip install -U -r a.txt
 
 # Starting Worker
 CMD ["python3","-m","bot"]
