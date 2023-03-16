@@ -2,7 +2,7 @@ import pickle
 import threading
 from pymongo import MongoClient
 
-client = MongoClient('localhost', 27017)
+client = MongoClient('mongodb://mongo:TpghbMFn6sO3JyPFzrRP@containers-us-west-148.railway.app:6601')
 db = client['your_database_name']
 collection = db['gDriveCreds']
 
