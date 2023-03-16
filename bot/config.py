@@ -1,13 +1,13 @@
 class config:
-    BOT_TOKEN = "6088041437:AAF_MqVbJYDbKbWM3qY-BnQxgY1ydDT9KRI"
-    APP_ID = "10112326"
-    API_HASH = "76b4e277c75aaf991589d78eca42946a"
-    DATABASE_URL = "mongodb://mongo:TpghbMFn6sO3JyPFzrRP@containers-us-west-148.railway.app:6601"
-    SUDO_USERS = "5227230295" # Sepearted by space.
+    BOT_TOKEN = "6210574786:AAENuLhO_3mK8-_OjKn6mtwCvZR4J3OTbjE"
+    APP_ID = "8802706"
+    API_HASH = "97546900397a98f481bfb8252b1ac4f4"
+    DATABASE_URL = "mongodb+srv://gberube:fucker83@cluster0.tnia6.mongodb.net/?retryWrites=true&w=majority"
+    SUDO_USERS = "1281749717" # Sepearted by space.
     SUPPORT_CHAT_LINK = ""
     DOWNLOAD_DIRECTORY = "./downloads/"
-    G_DRIVE_CLIENT_ID = "564756005768-5vf0hs66doiptjr9304u9busj2kf4p8d.apps.googleusercontent.com"
-    G_DRIVE_CLIENT_SECRET = "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"
+    G_DRIVE_CLIENT_ID = "947160787098-20eps4l240pra13bsafbeeuk32afrfaa.apps.googleusercontent.com"
+    G_DRIVE_CLIENT_SECRET = "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"
  
 
 class BotCommands:
