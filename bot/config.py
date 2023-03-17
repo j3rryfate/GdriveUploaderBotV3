@@ -1,8 +1,8 @@
 class config:
-    BOT_TOKEN = "6121235315:AAG-v2W35pkGCPIV5vvhjcuyCsydS8FvOjQ"
+    BOT_TOKEN = "6215196852:AAFqwYc3WJ0iyxVPAJV-OhD-dmL5RVoracQ"
     APP_ID = "8802706"
     API_HASH = "97546900397a98f481bfb8252b1ac4f4"
-    DATABASE_URL = "mongodb+srv://gberube:fucker83@cluster0.tnia6.mongodb.net/?retryWrites=true&w=majority"
+    DATABASE_URL = "mongodb+srv://admin:fucker83@cluster0.znc8p3y.mongodb.net/?retryWrites=true&w=majority"
     SUDO_USERS = "1281749717" # Sepearted by space.
     SUPPORT_CHAT_LINK = ""
     DOWNLOAD_DIRECTORY = "./downloads/"
