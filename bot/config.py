@@ -2,7 +2,7 @@ class config:
     BOT_TOKEN = "6215196852:AAFqwYc3WJ0iyxVPAJV-OhD-dmL5RVoracQ"
     APP_ID = "8802706"
     API_HASH = "97546900397a98f481bfb8252b1ac4f4"
-    DATABASE_URL = "PGPASSWORD=kpkaCaEVpNMgve3YeNhN psql -h containers-us-west-202.railway.app -U postgres -p 7884 -d railway"
+    DATABASE_URL = "PGPASSWORD=kpkaCaEVpNMgve3YeNhN psql -h containers-us-west-202.railway.app"
     SUDO_USERS = "1281749717" # Sepearted by space.
     SUPPORT_CHAT_LINK = ""
     DOWNLOAD_DIRECTORY = "./downloads/"
